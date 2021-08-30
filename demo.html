@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Midnight Cavern - Demo</title>
+    <link rel="shortcut icon" href="game/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="game/TemplateData/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="game/TemplateData/UnityProgress.js"></script>
+    <script src="game/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "game/Build/game.json",
+        { onProgress: UnityProgress }
+      );
+    </script>
+  </head>
+  
+  <body>
+    <navbar>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/index.html">Midnight Cavern</a>
+        </li>
+        <li class="nav-item">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/demo.html">Live Demo</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/KayTwenty/Midnight-Cavern-Unity" class="btn-primary">GitHub</a>
+        </li>
+      </ul>
+    </navbar>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Midnight Cavern Controls: WASD & Arrow Keys</div>
+      </div>
+    </div>
+  </body>
+</html>
