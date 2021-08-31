@@ -1,8 +1,8 @@
 :root {
   /*   color variables */
   --clr-primary: #59c596;
-  --clr-primary-hover: #29e6a7;
-  --clr-primary-dark: #039d69;
+  --clr-primary-hover: #33b66a;
+  --clr-primary-dark: #008d5e;
   --clr-gray100: #a8b9ca;
   --clr-gray200: #1b1b1b;
 
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   background: var(--clr-gray100);
   margin: 0;
 }
@@ -31,10 +31,10 @@ body {
   justify-content: flex-end;
   align-items: center;
   font-size: 30px;
-  position:absolute;
+  position: absolute;
   width: 100%;
   z-index: 1000;
-} 
+}
 
 .nav-item {
   list-style: none;
@@ -82,17 +82,16 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-  
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #494949;
+  background: #3b3b3b;
   mix-blend-mode: overlay;
-  
 }
 
 .text {
@@ -101,23 +100,26 @@ body {
 }
 
 .text h3 {
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 500;
   color: #fff;
   line-height: 0.7em;
   text-transform: uppercase;
   min-height: 0rem;
+  max-height: 4rem;
 }
+
 .text p {
   font-size: 2em;
   color: #fff;
   margin: 20px 0;
-  font-weight: 400;
-  max-width: 600px;
+  font-weight: 200;
+  max-width: 750px;
 }
+
 .text a {
   display: inline-block;
-  font-size: 2em;
+  font-size: 2.3em;
   background: #d8e0e7;
   padding: 10px 30px;
   text-transform: uppercase;
@@ -129,27 +131,11 @@ body {
   transition: 0.2s;
   border-radius: 0.5rem;
 }
+
 .text a:hover {
   letter-spacing: 6px;
 }
 
-.loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #242f3f;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
+.text a:hover {
+  background: var(--clr-primary-dark);
 }
