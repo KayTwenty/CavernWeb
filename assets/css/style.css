@@ -2,7 +2,7 @@
   /*   color variables */
   --clr-primary: #59c596;
   --clr-primary-hover: #33b66a;
-  --clr-primary-dark: #008d5e;
+  --clr-primary-dark: #22e954;
   --clr-gray100: #151627;
   --clr-gray200: #141414;
 
@@ -29,8 +29,6 @@ html {
 /* || NavBar || */
 
 .nav-list {
-  background: #394b5d;
-  box-shadow: 0px 0px 100px var(--clr-gray200);
   padding: 1rem 0rem;
   border-radius: var(--radius);
   display: flex;
@@ -50,11 +48,13 @@ html {
 .nav-item a {
   text-decoration: none;
   color: white;
+  font-size: 35px;
   transition: all 200ms ease-in;
 }
 
 .nav-item a:hover {
   color: var(--clr-primary-dark);
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .nav-item:first-child {
@@ -258,7 +258,7 @@ img {
 }
 
 .card img {
-  height: 400px;
+  height: auto;
 }
 
 .card > div {
